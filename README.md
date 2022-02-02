@@ -17,7 +17,7 @@
 
 <div align="center">
 
-### 🎖 1st grade, 1st semester
+### 🌱 1st grade, 1st semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
@@ -31,7 +31,7 @@
 <br>
 <br>
   
-### 🎖 1st grade, 2nd semester
+### 🌱 1st grade, 2nd semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
@@ -52,7 +52,7 @@
 <br>
 <br>
   
-### 🎖 2nd grade, 1st semester
+### 🪴 2nd grade, 1st semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
@@ -73,7 +73,7 @@
 <br>
 <br>
   
-### 🎖 2nd grade, 2nd semester
+### 🪴 2nd grade, 2nd semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
