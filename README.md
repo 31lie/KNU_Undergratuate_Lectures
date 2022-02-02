@@ -12,6 +12,8 @@
 🔥 **Current semester** : 🔜  3rd grade, 1st semester
 
 👣 **Credits I took** : 90 / 150
+<br>
+<br>
 
 <div align="center">
 
@@ -75,7 +77,7 @@
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
-| 선형대수 | 3 |  | # |
+| 선형대수 | 3 |  | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98) |
 | 소프트웨어 특강 | 3 | ✔️ |  |
 | 소프트웨어 설계 | 2 | ✔️ | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%84%A4%EA%B3%84) |
 | 시스템 프로그래밍 | 3 | ✔️ | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%EC%8B%9C%EC%8A%A4%ED%85%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) |
