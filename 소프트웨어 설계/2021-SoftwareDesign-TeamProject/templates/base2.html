@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>CIMS: Covid-19 Information Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/stageInfo.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+</head>
+<body>
+    <div class ="header">
+        <ul>
+            <a href="/startpage" style="text-decoration:none" ><li class="headr-menu">HOME</li></ㅁ>
+            <a href="/mypage" style="text-decoration:none" ><li class="headr-menu">Mypage</li></a>
+            <a href="/" style="text-decoration:none" ><li class="headr-menu">Logout</li></a>
+        </ul>
+    </div>
+    <div class="hero" style="max-height: 700px; padding-top: 10px; padding-bottom: 40px; margin: 0px auto; text-align: center;" >
+        <svg width="80" height="60" viewBox="5 0 80 60">
+            <path class="wave" fill="none" stroke="#3456DA" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" $=1$=010.0" />
+        </svg>
+        <h4 class="animation-title bigTitle">CIMS</h4>
+    </div>
+
+
+    <div id="app">
+        <ul class="menu-container">
+            <a href="/localCoronic" style="text-decoration:none" ><li class="menu">지역별 확진자 수</li></a>
+            <a href="/stageInfo" style="text-decoration:none" ><li class="menu">사회적 거리두기 단계 안내</li></a>
+            <a href="/currentStage" style="text-decoration:none" ><li class="menu">지역별 사회적 거리두기 현황</li></a>
+            <div class="focus-el el--1"></div>
+            <div class="focus-el el--2"></div>
+        </ul>
+    </div>
+
+
+    <div class = "content">
+        <ul class = "stage-menu">
+            <li><a href="level1" style="text-decoration:none">1단계</a></li>
+            <li><a href="level2" style="text-decoration:none">2단계</a></li>
+            <li><a href="level3" style="text-decoration:none">3단계</a></li>
+            <li><a href="level4" style="text-decoration:none">4단계</a></li>
+        </ul>
+ 
+    {% block content %}
+    {% endblock %}
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+</body>
+</html>

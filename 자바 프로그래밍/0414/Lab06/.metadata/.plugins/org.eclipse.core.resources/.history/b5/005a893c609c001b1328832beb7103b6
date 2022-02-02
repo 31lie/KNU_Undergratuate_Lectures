@@ -1,0 +1,13 @@
+package q;
+
+import p.B; // default 클래스는 같은 패키지 안에서만 접근 가
+
+class D extends B { // 따라서 상속도 안되고,
+
+	void f() {
+		// 그러므로 밑의 오류는 자명
+		n = 3;
+		g();
+	}
+
+}

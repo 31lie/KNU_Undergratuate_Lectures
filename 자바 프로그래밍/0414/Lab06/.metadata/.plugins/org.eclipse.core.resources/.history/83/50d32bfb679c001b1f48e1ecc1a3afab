@@ -1,0 +1,12 @@
+package q;
+
+import p.B; // default 클래스는 다른 패키지에서 접근하지 못한다.
+
+public class D extends B { //그러므로 상속 또한 안되고,
+	
+	void f() { //오류가 발생함은 자명.
+		n=3;
+		g();
+	}
+
+}

@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  overflow: scroll;
+}
+
+.header {
+  padding-left: 130vh;
+  padding-right: 20vh;
+  width: 100%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header ul {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.header ul li {
+  list-style: none;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "IBMPlexSansKR-Regular";
+  color: darkgray;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  color: darkblue;
+}
+
+.animation-title {
+  margin: 0 0 0.5rem 0;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-family: -apple-system, 'avenir next', avenir, roboto, noto, 'helvetica neue', helvetica, ubuntu, 'franklin gothic medium', 'century gothic', sans-serif;
+}
+
+.bigTitle {
+  color: #3456DA;
+  font-size: 3.82rem;
+  font-weight: 700;
+}
+
+.smallTitle {
+  color: #6495ED;
+  font-size: 1.82rem;
+  font-weight: 500;
+}
+
+.wave {
+  -webkit-animation: moveTheWave 2400ms linear infinite;
+          animation: moveTheWave 2400ms linear infinite;
+  stroke-dasharray: 0 16 101 16;
+}
+
+@-webkit-keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+}
+
+@keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+}
+
+#app {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#app ul {
+  position: relative;
+  width: 90%;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border-radius: 35px;
+  background: rgba(100, 149, 237, 0.7);
+  -webkit-box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+#app ul li {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: "IBMPlexSansKR-Regular";
+  color: #fff;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#app ul .focus-el {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% / 3);
+  height: 100%;
+  border-radius: 35px;
+  background: #3456DA;
+  -webkit-box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.015), 0 100px 80px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.015), 0 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+#app ul .focus-el.el--2 {
+  left: calc(-100% / 3);
+}
+
+.content {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .date-criterion {
+  font-family: "IBMPlexSansKR-Regular";
+  font-size: 20px;
+  margin-top: 53%;
+}
+
+.content .coronicMatrix {
+  margin-top: 5%;
+  padding-bottom: 5%;
+  font-family: "IBMPlexSansKR-Regular";
+  font-size: 20px;
+  text-align: center;
+}
+
+.content .coronicMatrix table {
+  border-top: 1px solid #6495ED;
+  border-collapse: collapse;
+}
+
+.content .coronicMatrix table th, .content .coronicMatrix table td {
+  border-bottom: 1px solid #6495ED;
+  padding: 10px;
+}
+/*# sourceMappingURL=localCoronic.css.map */

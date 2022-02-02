@@ -1,0 +1,10 @@
+package p;
+
+class C {
+	public void k() {
+		B b= new B();
+		// default 클래스에서 private 변수가 선언되면 클래스에서만 참조 가능하다.
+		b.n=7;
+		b.g();
+	}
+}

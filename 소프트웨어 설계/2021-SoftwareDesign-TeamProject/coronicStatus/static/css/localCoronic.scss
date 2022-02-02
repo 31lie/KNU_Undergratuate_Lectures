@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$background: #fff;
+$font-family: 'IBMPlexSansKR-Regular';
+$container-width: 90%;
+$border-radius: 35px;
+$element-count: 3;
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $background;
+    overflow: scroll;
+}
+
+.header {
+    padding-left: 130vh;
+    padding-right: 20vh;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+
+
+    ul {
+        position: relative;
+        width: $container-width;
+        height: 40px;
+        display: grid;
+        grid-template-columns: repeat($element-count, 1fr);
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+            display: grid;
+            place-items: center;
+            font-family: $font-family;
+            color: darkgray;
+            cursor: pointer;
+
+        }
+
+        li:hover {
+            color: darkblue;
+        }
+    }
+}
+
+
+
+.animation-title {
+    margin: 0 0 0.5rem 0;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-family: -apple-system,
+        'avenir next', avenir,
+        roboto, noto,
+        'helvetica neue', helvetica,
+        ubuntu,
+        'franklin gothic medium', 'century gothic',
+        sans-serif;
+}
+
+.bigTitle {
+    color: #3456DA;
+    font-size: 3.82rem;
+    font-weight: 700;
+}
+
+.smallTitle {
+    color: #6495ED;
+    font-size: 1.82rem;
+    font-weight: 500;
+}
+
+.wave {
+    animation: moveTheWave 2400ms linear infinite;
+    stroke-dasharray: 0 16 101 16;
+}
+
+@keyframes moveTheWave {
+
+    0% {
+        stroke-dashoffset: 0;
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        stroke-dashoffset: -133;
+        transform: translate3d(-90px, 0, 0);
+    }
+
+}
+
+
+
+#app {
+    width: $container-width;
+
+    display: grid;
+    place-items: center;
+
+    ul {
+        position: relative;
+        width: $container-width;
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat($element-count, 1fr);
+        border-radius: $border-radius;
+        background: rgba(100, 149, 237, .7);
+        box-shadow:
+            0 12.5px 10px rgba(0, 0, 0, 0.08),
+            0 100px 80px rgba(0, 0, 0, 0.03);
+        overflow: hidden;
+
+        li {
+            list-style: none;
+            display: grid;
+            place-items: center;
+            font-family: $font-family;
+            color: $background;
+            z-index: 10;
+            position: relative;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .focus-el {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: calc(100% / #{$element-count});
+            height: 100%;
+            border-radius: $border-radius;
+            background: #3456DA;
+            box-shadow:
+                0 12.5px 10px rgba(0, 0, 0, 0.015),
+                0 100px 80px rgba(0, 0, 0, 0.03);
+
+            &.el--2 {
+                left: calc(-100% / #{$element-count});
+            }
+        }
+    }
+}
+
+
+
+.content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    .date-criterion {
+        font-family: "IBMPlexSansKR-Regular";
+        font-size: 20px;
+        margin-top: 53%;
+    }
+
+    .coronicMatrix {
+        margin-top: 5%;
+        padding-bottom: 5%;
+        font-family: "IBMPlexSansKR-Regular";
+        font-size: 20px;
+        text-align: center;
+
+        table {
+            border-top: 1px solid #6495ED;
+            border-collapse: collapse;
+
+            th, td {
+                border-bottom: 1px solid #6495ED;
+                padding: 10px;
+            }
+        }
+    }
+}

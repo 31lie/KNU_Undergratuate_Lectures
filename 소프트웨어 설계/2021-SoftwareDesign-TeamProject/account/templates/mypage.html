@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIMS: Covid-19 Information Management System</title>
+    <link rel="stylesheet" href="{% static 'css/mypage.css' %}">
+</head>
+
+
+<body>
+    <div class ="header">
+        <ul>
+            <a href="/startpage" style="text-decoration:none" ><li class="headr-menu">HOME</li></a>
+            <a href="/mypage" style="text-decoration:none" ><li class="headr-menu">Mypage</li></a>
+            <a href="/" style="text-decoration:none" ><li class="headr-menu">Logout</li></a>
+        </ul>
+    </div>
+    
+    <div class="mypage">
+        <h3>My page</h3>
+        <form action="{% url 'change_pw' %}" method="POST" class="form-container">
+            {% csrf_token %}
+            <div class="input-box id-container">
+                <p class = "user-id">아이디</p>
+                <p class = "user-id">{{ user.username }} </p>
+            </div>
+
+            <div class="input-box">
+                <input id="password-cur" type="password" name="password-cur" placeholder="현재 비밀번호">
+                <label for="password-cur">현재 비밀번호</label>
+            </div>
+
+            <div class="input-box">
+                <input id="password" type="password" name="password" placeholder="변경할 비밀번호">
+                <label for="password">변경할 비밀번호</label>
+            </div>
+
+            <div class="input-box">
+                <input id="password-re" type="password" name="password-re" placeholder="변경할 비밀번호 확인">
+                <label for="password-re">변경할 비밀번호 확인</label>
+            </div>
+            <input type="submit" value="비밀번호 변경" class="change-btn">
+        </form>
+
+        <a href="{% url 'userDelete' %}"><input type="submit" value="회원 탈퇴" id = "delete"></a>
+    </div>
+</body>
+
+</html>

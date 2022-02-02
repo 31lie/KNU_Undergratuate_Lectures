@@ -1,0 +1,9 @@
+        ! How to Play TENOX !
+
+        * You can make a box with starting point and width / height.
+            - You have to designate the starting point as the leftmost, topmost point.
+        * If the sum of the numbers in the box becomes zero, Every number in the box becomes zero.
+        * If all numbers become zero, you win.
+
+        1) MakeZERO : Measure the time it takes to make all the numbers zero.
+        2) TimeKILL : Let's see how many times you make zero in 100 seconds.

@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+/Users/ellie/Desktop/Playground/Java/KNU_java/Lab06/.metadata/.plugins/org.eclipse.jdt.core
+3535935555.index
+2781161685.index
+1285983712.index
+2728979660.index
+3686907836.index
+1158726091.index
+1020033391.index
+3585072218.index
+1000455542.index

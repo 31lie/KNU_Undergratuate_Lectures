@@ -1,0 +1,12 @@
+
+public class chekedExceptionTest {
+
+	public static void main(String[] args) throws Exception {
+		
+		System.out.println("Cheked Exception Test");
+		
+		throw new Exception("checkedExceptionTest");
+
+	}
+
+}

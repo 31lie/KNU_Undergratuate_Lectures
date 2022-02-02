@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/ellie/Desktop/Playground/Java/KNU_java/Lab08/.metadata/.plugins/org.eclipse.jdt.core
+3686907836.index
+1120464390.index

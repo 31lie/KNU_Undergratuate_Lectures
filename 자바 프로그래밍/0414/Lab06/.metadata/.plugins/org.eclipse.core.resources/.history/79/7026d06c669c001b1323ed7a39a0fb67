@@ -1,0 +1,14 @@
+package q;
+
+import p.B; //default 는 같은 패키지 안에서만 접근 가능
+
+class A {
+
+	void f() {
+		// 마찬가지로 접근 불가능
+		B b = new B();
+		b.n=3;
+		b.g();
+	}
+	
+}

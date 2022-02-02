@@ -1,0 +1,34 @@
+
+class Animal {
+	
+	void show() {
+		System.out.println("Animal: show()");
+	}
+	void move() { 
+		System.out.println("Animal: move()");
+	}
+}
+
+class Fish extends Animal {
+	
+	void draw() {
+		System.out.println("Fish: draw()");
+	}
+	
+	void move() {
+		System.out.println("Fish: move()");
+	}
+}
+
+
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		
+		Fish fish = new Fish();
+		fish.move();
+
+	}
+
+}

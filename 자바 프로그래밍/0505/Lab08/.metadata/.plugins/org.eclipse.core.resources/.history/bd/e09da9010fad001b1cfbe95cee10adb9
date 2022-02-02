@@ -1,0 +1,83 @@
+// 2020114658 이윤서
+// 본인은 이 소스파일을 다른 사람의 소스를 복사하지 않고 직접 작성하였습니다.
+
+
+/* is-a 관계에 있는 예외 클래스 3개를 생성한다.
+ * 각각, Exception <- ExceptionA <- ExceptionB
+ */
+
+
+class ExceptionA extends Exception {
+	public ExceptionA() {
+		super("Exception A 발생");
+	}
+	
+	public ExceptionA(String string) {
+		super(string);
+	}
+}
+
+class ExceptionB extends ExceptionA {
+	public ExceptionB() {
+		super("Exception B 발생");
+	}
+}
+
+
+public class ExceptionTest1 {
+
+	public static void main(String[] args) {
+		
+		try { 
+			// ExceptioA 예외 객체를 throw 했을 때,
+			throw new ExceptionA();
+		}
+		
+		// Exception 객체, 즉 부모 클래스의 객체로 잡아도 정상적으로 핸들링이 이루어진다.
+		catch (Exception exception) {
+			System.err.println(exception);
+		}
+		
+		try {
+			// ExceptioB 예외 객체를 throw 해보자.
+			throw new ExceptionB();
+		}
+			
+		// 더 위의 슈퍼클래스인 Exception 객체로도 catch 되고,
+		catch (Exception exception) {
+			System.err.println(exception);
+		}
+	
+		try {
+			throw new ExceptionB();
+		}
+		
+		// 바로 위 슈퍼클래스인 ExceptionA 객체로도 catch 된다.
+		catch (ExceptionA exceptionA) {
+			System.err.println(exceptionA);
+		}
+	
+		// 이로써, is-a 관계에 있는 예외에 대하여 polymorphic processing이 가능함을 알 수 있다
+	
+		// (2) 여러 개의 예외에 관한 핸들러를 따로 구현해보자.
+		
+		try {
+			throw new ExceptionB();
+		} catch (ExceptionB exceptionB) {
+			System.err.println(exceptionB);
+		}
+		
+		try {
+			throw new ExceptionA();
+		} catch (ExceptionA exceptionA) {
+			System.err.println(exceptionA);
+		}
+		
+		try {
+			throw new Exception();
+		} catch (Exception exception) {
+			System.err.println(exception);
+		}
+	}
+
+}

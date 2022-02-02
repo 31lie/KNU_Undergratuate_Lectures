@@ -1,0 +1,11 @@
+package q;
+
+import p.B;
+
+public class A {
+	
+	B b = new B();
+	b.n=3;
+	b.g();
+
+}

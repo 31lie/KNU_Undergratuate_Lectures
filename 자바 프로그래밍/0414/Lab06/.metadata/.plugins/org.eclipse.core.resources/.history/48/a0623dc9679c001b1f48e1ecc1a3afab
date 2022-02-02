@@ -1,0 +1,12 @@
+package q;
+
+import p.B;
+
+public class D {
+	
+	void f() {
+		n=3;
+		g();
+	}
+
+}

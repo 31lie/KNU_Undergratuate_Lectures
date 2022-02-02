@@ -1,0 +1,12 @@
+package p;
+
+class E extends B {
+	
+	void f() {
+		// default 클래스에서 private 변수가 선언되면 상속을 받더라도 같은 클래스에서만 참조 가능하다.
+		n=3;
+		// 메소드도 마찬가지.
+		g();
+	}
+
+}

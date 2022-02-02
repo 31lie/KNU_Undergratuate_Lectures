@@ -1,0 +1,30 @@
+class ExceptionA extends Exception {
+	public ExceptionA() {
+		super("Exception A");
+	}
+	
+	public ExceptionA(String string) {
+		super(string);
+	}
+}
+
+class ExceptionB extends ExceptionA {
+	public ExceptionB() {
+		super("Exception B");
+	}
+}
+
+public class ExceptionTest1 {
+
+	public static void main(String[] args) {
+		
+		try {
+			throw new ExceptionA();
+		}
+		
+		catch (Exception exception) {
+			System.err.println(exception);
+		}
+	}
+
+}

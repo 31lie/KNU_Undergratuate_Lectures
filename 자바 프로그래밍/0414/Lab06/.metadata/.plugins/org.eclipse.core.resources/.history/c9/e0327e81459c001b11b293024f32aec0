@@ -1,0 +1,10 @@
+package q;
+
+import p.B;
+
+class B extends B{
+	void f() {
+		n=3;
+		g();
+	}
+}

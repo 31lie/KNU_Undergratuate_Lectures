@@ -1,0 +1,60 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+<div class="info">
+    <h1 class="semi-title" style="color: black;">사회적거리두기 <span style="color: #3456DA;">1단계</span>  안내</h1>
+<div class="levelMatrix">
+    <table>
+        <tr>
+            <th>기준</th>
+            <td>
+                <ul>
+                    {% for level1 in level1.all %}
+                    {% if level1.level == '1' %}
+                    <p>{{ level1.criterion }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>사적모임수칙</th>
+            <td>
+                <ul>
+                    {% for level1 in level1.all %}
+                    {% if level1.level == '1' %}
+                    <p>{{ level1.privateMeetingRule }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>행사수칙</th>
+            <td>
+                <ul>
+                    {% for level1 in level1.all %}
+                    {% if level1.level == '1' %}
+                    <p>{{ level1.festivalRule }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>집회수칙</th>
+            <td>
+                <ul>
+                    {% for level1 in level1.all %}
+                    {% if level1.level == '1' %}
+                    <p>{{ level1.rallyRule }}</p>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+{% endblock %}
