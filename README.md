@@ -9,7 +9,7 @@
 <br>
 <br>
 🔥 **Current semester** : 🔜  3rd grade, 1st semester
-👣  **Credits I took** : 90 / 150
+👣 **Credits I took** : 90 / 150
 
 <div align="center">
 
@@ -24,7 +24,9 @@
 | 수학 I | 3 |  |  |
 | 철학의 근본문제 | 3 |  |  |
 | 컴퓨터학개론 | 3 | ✔️ |  |
-
+<br>
+<br>
+  
 ### 🎖 1st grade, 2nd semester
 
 | Lecture | Credit | Major | Repo |
@@ -35,13 +37,15 @@
 | 대학글쓰기 | 3 |  |  |
 | 이산수학 | 3 |  |  |
 | 프로그래밍기초 | 3 | ✔️ | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B8%B0%EC%B4%88) |
-
+<br><br>
+  
 ### ❄️  2020 Winter semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
 | 인공지능의 이해 | 3 |  |  |
-
+<br><br>
+  
 ### 🎖 2nd grade, 1st semester
 
 | Lecture | Credit | Major | Repo |
@@ -52,13 +56,15 @@
 | 자료구조 | 3 | ✔️ |  |
 | 자료구조응용 | 3 | ✔️ | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%91%EC%9A%A9) |
 | 자바 프로그래밍 | 3 | ✔️ | [#](https://github.com/31lie/KNU_Undergratuate_Lectures/tree/main/%EC%9E%90%EB%B0%94%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) |
-
+<br><br>
+  
 ### ⛱  2021 Summer semester
 
 | Lecture | Credit | Major | Repo |
 |:---:|:---:|:---:|:---:|
 | 웹 프로그래밍 기초 | 3 |  |  |
-
+<br><br>
+  
 ### 🎖 2nd grade, 2nd semester
 
 | Lecture | Credit | Major | Repo |
